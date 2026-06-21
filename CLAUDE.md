@@ -3,14 +3,8 @@
 ## Auto-Resume Protocol
 
 At the start of every session:
-1. Fetch `conversation.md` from the `fye-svg/claude` GitHub repo (main branch)
-2. Summarize the last session so the user knows where we left off
-3. Ask: "Would you like to continue from where we left off, or start something new?"
-
-At the end of every session (or when the user asks):
-1. Update the relevant conversation file on GitHub with a summary of what was done
-
----
+START: "Read my conversation files from GitHub at fye-svg/claude and continue from where we left off."
+END: "Update conversation.md on GitHub with today's session."
 
 ## Conversation Files
 
